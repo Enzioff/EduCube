@@ -1,0 +1,13 @@
+.article-kit {
+  display: flex;
+  justify-content: center;
+  &__title {
+    font-size: 19px;
+    font-weight: 700;
+
+    @include r($mobile) {
+      font-size: 16px;
+      text-align: center;
+    }
+  }
+}

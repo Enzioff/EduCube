@@ -1,0 +1,30 @@
+// meta
+@import "./UI/index";
+@import "./container/container";
+@import "./section/section";
+
+// blocks
+@import "./header/header";
+@import "./nav/nav";
+@import "./head/head";
+@import "./features/features";
+@import "./kits/kits";
+@import "./info/info";
+@import "./footer/footer";
+@import "./mobile-menu/mobile-menu";
+@import "./intro/intro";
+@import "./benefice/benefice";
+@import "./learn-more/learn-more";
+
+// elements
+@import "./main-title/main-title";
+@import "./title/title";
+@import "./subtitle/subtitle";
+@import "./burger/burger";
+@import "./gallery/gallery";
+@import "./text/text";
+
+// articles
+@import "./articles/article-feature";
+@import "./articles/article-kit";
+@import "./articles/article-info";

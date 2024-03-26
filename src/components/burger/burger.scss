@@ -1,0 +1,48 @@
+.burger {
+  position: relative;
+  display: flex;
+  width: 24px;
+  height: 18px;
+  cursor: pointer;
+  overflow: hidden;
+
+  @include rmin($mobile + 1) {
+    display: none;
+  }
+
+  &__item,
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 22px;
+    height: 2px;
+    background-color: $light;
+    transition: .2s linear;
+  }
+
+  &__item {
+    top: 7px;
+  }
+
+  &::after {
+    top: 14px;
+  }
+
+  &.active {
+    .burger__item {
+      top: -4px;
+    }
+    &::before {
+      top: 7px;
+      transform: rotate(45deg);
+    }
+    &::after {
+      top: 7px;
+      transform: rotate(-45deg);
+    }
+  }
+}

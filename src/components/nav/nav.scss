@@ -1,0 +1,12 @@
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  &__link {
+    padding: 20px;
+    &:hover {
+      opacity: .7;
+    }
+  }
+}

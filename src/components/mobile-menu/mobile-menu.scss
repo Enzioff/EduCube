@@ -1,0 +1,24 @@
+.mobile-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: $light;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(-100%);
+  transition: .2s linear;
+
+  &.active {
+    opacity: 1;
+    visibility: visible;
+    z-index: 2;
+    transform: translateX(0);
+  }
+
+  .nav {
+    flex-direction: column;
+    &__link {
+      color: $dark;
+    }
+  }
+}

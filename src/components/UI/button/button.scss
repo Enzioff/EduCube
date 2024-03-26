@@ -1,0 +1,22 @@
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 312px;
+  padding: 15px;
+  border-radius: 5px;
+  background-color: $accent;
+  font-size: 25px;
+  text-align: center;
+  color: $light;
+  cursor: pointer;
+
+  &:hover {
+    opacity: .7;
+  }
+
+  &--centered {
+    width: 350px;
+    margin: 0 auto;
+  }
+}

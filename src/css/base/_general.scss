@@ -1,0 +1,51 @@
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a,
+svg,
+button {
+  transition: 0.3s all;
+}
+
+a {
+  text-decoration: none;
+}
+
+input,
+textarea,
+button {
+  font-family: inherit;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  min-width: 300px;
+  font-family: $font-main;
+  font-size: 16px;
+  background-color: $grey;
+  overflow-x: hidden;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: inside;
+}
+
+.main {
+  flex-grow: 1;
+  overflow-x: hidden;
+}
+
+.mob-hidden {
+  @include r($mobile) {
+    display: none;
+  }
+}
