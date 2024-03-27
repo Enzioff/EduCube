@@ -1,5 +1,16 @@
 .learn-more {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-flow: dense;
+  gap: 20px;
+
+  @include r($mobile) {
+    display: flex;
+    flex-direction: column;
+  }
+
+  & > *:first-child {
+    grid-column: span 2;
+    margin-bottom: 20px;
+  }
 }

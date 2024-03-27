@@ -2,29 +2,77 @@
   display: flex;
   gap: 24px;
 
+  @include r($mobile) {
+    flex-direction: column;
+    width: 100%;
+  }
+
   &__item {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 28px;
     max-width: 200px;
+
+    &::before {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      content: "";
+      width: 180px;
+      height: 180px;
+      background-color: rgba(#FF7716, 40%);
+      border-radius: 100px 14px 14px 100px;
+      filter: blur(50px);
+    }
+
     &:nth-child(1) {
       max-width: 214px;
       padding: 30px 30px 26px 53px;
       background-color: $orange;
       border-radius: 14px 14px 14px 100px;
+      @include r($mobile) {
+        max-width: 100%;
+        border-radius: 100px 14px 14px 14px;
+      }
     }
+
     &:nth-child(2) {
       padding: 34px 25px 25px 25px;
       background-color: $blue;
       border-radius: 14px;
+
+      &::before {
+        top: 30px;
+        right: 20px;
+        background-color: rgba(#2AADE5, 40%);
+      }
     }
+
     &:nth-child(3) {
       max-width: 214px;
       padding: 33px 33px 26px 30px;
       background-color: $violet;
       border-radius: 14px 100px 14px 14px;
+      @include r($mobile) {
+        max-width: 100%;
+        border-radius: 14px 14px 100px 14px;
+      }
+
+      &::before {
+        background-color: rgba(#4562B7, 40%);
+        border-radius: 14px 100px 100px 14px;
+      }
     }
+
+    @include r($mobile) {
+      max-width: 100%;
+    }
+  }
+
+  img {
+    z-index: 1;
   }
 
   &__text {
@@ -35,6 +83,8 @@
     letter-spacing: 0.02em;
     text-align: center;
     color: $light;
+    z-index: 1;
+
     span {
       font-weight: 700;
     }
