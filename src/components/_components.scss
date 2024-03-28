@@ -19,11 +19,11 @@
 
 // elements
 @import "./main-title/main-title";
-@import "./title/title";
-@import "./subtitle/subtitle";
+@import "page-title/page-title";
+@import "./page-subtitle/page-subtitle";
 @import "./burger/burger";
 @import "./gallery/gallery";
-@import "./text/text";
+@import "text-block/text-block";
 
 // articles
 @import "./articles/article-feature";
