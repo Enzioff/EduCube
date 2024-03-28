@@ -3,11 +3,10 @@
 @import "helpers/mixins";
 @import "helpers/functions";
 
-// Base
-@import "base/margins";
-@import "base/paddings";
-
 // Components
 @import "../components/components";
 
+// Base
+@import "base/margins";
+@import "base/paddings";
 @import "base/general";
