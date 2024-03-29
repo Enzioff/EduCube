@@ -6,10 +6,6 @@
   cursor: pointer;
   overflow: hidden;
 
-  @include rmin($mobile + 1) {
-    display: none;
-  }
-
   &__item,
   &::before,
   &::after {

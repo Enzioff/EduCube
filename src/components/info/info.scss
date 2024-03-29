@@ -8,10 +8,6 @@
     transform: scale(-1, 1) rotate(-20deg);
     width: 619px;
 
-    @include r($mobile) {
-      display: none;
-    }
-
     img {
       display: block;
       width: 100%;

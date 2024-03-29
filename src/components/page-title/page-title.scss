@@ -6,9 +6,4 @@
   text-align: center;
   text-transform: uppercase;
   color: $dark;
-
-  @include r($mobile) {
-    font-size: 32px;
-    line-height: 32px;
-  }
 }

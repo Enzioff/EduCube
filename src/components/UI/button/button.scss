@@ -14,10 +14,6 @@
   color: $light;
   cursor: pointer;
 
-  @include r($mobile) {
-    min-width: 200px;
-  }
-
   &:hover {
     opacity: .7;
   }

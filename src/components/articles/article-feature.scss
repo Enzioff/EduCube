@@ -8,10 +8,6 @@
   background-color: $grey;
   border-radius: 8px;
 
-  @include r($mobile) {
-    max-width: 100%;
-  }
-
   &__picture {
     display: flex;
     align-items: center;

@@ -4,10 +4,6 @@
   &__title {
     font-size: 19px;
     font-weight: 700;
-
-    @include r($mobile) {
-      font-size: 16px;
-      text-align: center;
-    }
+    
   }
 }

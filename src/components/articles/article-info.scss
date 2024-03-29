@@ -15,11 +15,7 @@
     flex-direction: column;
     gap: 30px;
     padding: 96px 70px;
-
-    @include r($mobile) {
-      padding: 30px;
-      gap: 20px;
-    }
+    
     &::after {
       position: absolute;
       top: 50%;
@@ -30,10 +26,7 @@
       width: 2px;
       background-color: $orange;
       transform: translateY(-50%);
-
-      @include r($mobile) {
-        height: 70%;
-      }
+      
     }
   }
 
@@ -44,9 +37,6 @@
     line-height: 35.2px;
     text-transform: uppercase;
 
-    @include r($mobile) {
-      font-size: 20px;
-    }
   }
 
   &__text {
@@ -55,9 +45,6 @@
     font-weight: 400;
     line-height: 30.6px;
     letter-spacing: 0.02em;
-
-    @include r($mobile) {
-      font-size: 16px;
-    }
+    
   }
 }

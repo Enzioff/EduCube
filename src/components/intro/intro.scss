@@ -13,9 +13,6 @@
   &__picture {
     position: relative;
     transform: rotate(-20deg);
-    @include r($mobile) {
-      display: none;
-    }
 
     img {
       position: relative;
@@ -51,9 +48,6 @@
     text-align: left;
     text-transform: uppercase;
     color: $light;
-
-    @include r($mobile) {
-      font-size: 38px;
-    }
+    
   }
 }

@@ -5,10 +5,6 @@
     background-repeat: no-repeat;
     background-position: bottom left 16%;
     overflow: hidden;
-
-    @include r($mobile) {
-      background: linear-gradient(180deg, #2B3153 0%, #1B2035 100%);
-    }
   }
 
   &--light {

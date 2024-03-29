@@ -5,19 +5,9 @@
   gap: 42px;
   margin-bottom: 120px;
 
-  @include r($mobile) {
-    gap: 20px;
-    margin-bottom: 50px;
-  }
-
   &__line {
     display: flex;
     gap: 68px;
-
-    @include r($mobile) {
-      flex-direction: column;
-      gap: 20px;
-      width: 100%;
-    }
+    
   }
 }
